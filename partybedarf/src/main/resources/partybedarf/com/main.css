@@ -1,0 +1,21 @@
+/* Hintergrundfarbe für das Hauptfenster */
+.root {
+    -fx-background-color: #434040;
+}
+
+/* Farbe für alle Icons */
+.icon {
+    -fx-fill: #18F1EA;
+}
+
+/* Farbe für alle Labels */
+.label {
+    -fx-text-fill: #18F1EA;
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+}
+
+/* Farbe für alle ToggleButtons */
+.toggle-button {
+    -fx-text-fill: #18F1EA;
+}

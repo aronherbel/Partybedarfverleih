@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.Icon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="partybedarf.com.MainController">
+   <children>
+      <HBox alignment="TOP_CENTER" layoutX="-3.0" prefHeight="37.0" prefWidth="606.0" spacing="160.0">
+         <children>
+            <Icon fx:id="logout" content="EXIT_TO_APP" prefHeight="43.0" prefWidth="62.0" />
+            <Label prefHeight="37.0" prefWidth="236.0" text="Everything for your party">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Darkmode" />
+                  <ToggleButton fx:id="darkModeToggle" mnemonicParsing="false" onAction="#setMode" prefHeight="25.0" prefWidth="55.0" />
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </HBox>
+      <VBox layoutX="98.0" layoutY="91.0" prefHeight="185.0" prefWidth="164.0" AnchorPane.bottomAnchor="124.0" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="338.0" AnchorPane.topAnchor="91.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="160.0" spacing="60.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="92.0" text="Music Boxes" />
+                  <Icon fx:id="icAddMusicBox" content="ADD" prefHeight="25.0" prefWidth="25.0" />
+               </children>
+            </HBox>
+            <Line endX="59.29292297363281" endY="3.31799196828797E-6" startX="-100.0">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </Line>
+            <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="160.0" spacing="80.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="69.0" text="DJ-Pult" />
+                  <Icon fx:id="icAddDjPult" content="ADD" prefHeight="25.0" prefWidth="25.0" />
+               </children>
+            </HBox>
+            <Line endX="60.62623596191406" endY="3.31799196828797E-6" startX="-100.0">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </Line>
+            <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="160.0" spacing="100.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="54.0" text="Lights" />
+                  <Icon fx:id="icAddLights" content="ADD" prefHeight="25.0" prefWidth="25.0" />
+               </children>
+            </HBox>
+            <Line endX="61.95954895019531" endY="3.31799196828797E-6" startX="-100.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="342.0" layoutY="91.0" prefHeight="185.0" prefWidth="164.0" AnchorPane.bottomAnchor="124.0" AnchorPane.leftAnchor="342.0" AnchorPane.rightAnchor="94.0" AnchorPane.topAnchor="91.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="160.0" spacing="60.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="77.0" text="Microphone " />
+                  <Icon fx:id="icAddMicrophone" content="ADD" prefHeight="25.0" prefWidth="25.0" />
+               </children>
+            </HBox>
+            <Line endX="56.95954895019531" endY="3.31799196828797E-6" startX="-100.0">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </Line>
+            <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="113.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="141.0" text="Bar with Baarkeeper" />
+                  <Icon fx:id="icAddBar" content="ADD" prefHeight="25.0" prefWidth="25.0" />
+               </children>
+            </HBox>
+            <Line endX="59.29292297363281" endY="3.31799196828797E-6" startX="-100.0">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+            </Line>
+            <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="160.0" spacing="80.0">
+               <children>
+                  <Label text="Decoration" />
+                  <Icon fx:id="icAddDeco" content="ADD" prefHeight="25.0" prefWidth="25.0" />
+               </children>
+            </HBox>
+            <Line endX="59.29292297363281" endY="3.31799196828797E-6" startX="-100.0" />
+         </children>
+      </VBox>
+      <HBox alignment="TOP_CENTER" layoutY="247.0" prefHeight="153.0" prefWidth="600.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Icon content="SHOPPING_BASKET" prefHeight="68.0" prefWidth="100.0" />
+                  <Label fx:id="lblCount" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

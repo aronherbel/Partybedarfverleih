@@ -1,0 +1,46 @@
+/* Set the background color of the root pane */
+.anchor-pane {
+    -fx-background-color: #434040;
+}
+
+/* Set the background color of the ScrollPane */
+.scroll-pane {
+    -fx-background: #4E4E4E;
+}
+
+/* Ensure the ScrollPane's viewport uses the same background */
+.scroll-pane .viewport {
+    -fx-background: #4E4E4E;
+}
+
+/* Set the background color of the Button */
+.button {
+    -fx-background-color: #4E4E4E;
+    -fx-text-fill: #18F1EA;
+}
+
+/* Set the text color for all labels and text */
+.label, .text {
+    -fx-text-fill: #18F1EA;
+}
+
+/* Set the text color for the TextField and PasswordField */
+.text-field, .password-field {
+    -fx-text-fill: #18F1EA;
+}
+
+/* Set the background color for the TextField and PasswordField */
+.text-field, .password-field {
+    -fx-background-color: #4E4E4E;
+    -fx-prompt-text-fill: #18F1EA;
+}
+
+/* Set the border color for the TextField and PasswordField */
+.text-field, .password-field {
+    -fx-border-color: #4E4E4E;
+}
+
+/* Set the color for the prompt text in TextField and PasswordField */
+.text-field:focused, .password-field:focused {
+    -fx-prompt-text-fill: #18F1EA;
+}

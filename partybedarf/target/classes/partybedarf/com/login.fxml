@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@login.css" styleClass="anchor-pane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="partybedarf.com.LoginController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="207.0" spacing="5.0">
+         <children>
+            <Label text="Rent everything" styleClass="label">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="what you need for your Party!" styleClass="label">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ScrollPane styleClass="scroll-pane">
+               <content>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Planning a celebration? We have everything you need to make it unforgettable. Choose us for our extensive inventory of high-quality tableware, furniture, decorations, sound systems, and more. Enjoy great value with our affordable rates, flexible rental periods, and easy pickup and delivery options. Our experienced specialists are here to help you plan every detail." wrappingWidth="157.33333333333337" styleClass="text"/>
+               </content>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <HBox alignment="TOP_CENTER" layoutX="204.0" layoutY="-4.0" prefHeight="320.0" prefWidth="233.0" spacing="20.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="204.0" AnchorPane.rightAnchor="163.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="311.0" prefWidth="217.0" spacing="15.0">
+               <children>
+                  <Label text="Everything for your Party" styleClass="label">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label text="E-Mail" styleClass="label"/>
+                  <TextField fx:id="inpEmail" styleClass="text-field"/>
+                  <Label text="Password" styleClass="label"/>
+                  <PasswordField fx:id="inpPassword" styleClass="password-field"/>
+                  <Button fx:id="btnLogin" mnemonicParsing="false" prefHeight="42.0" prefWidth="98.0" text="Log-In" styleClass="button"/>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <Label fx:id="lblsignInOne" layoutX="445.0" layoutY="249.0" text="Dont have an account yet?" styleClass="label">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblsignInTwo" layoutX="489.0" layoutY="266.0" text="sign up" styleClass="label">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+       <Label fx:id="messageLabel" text="" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
